@@ -35,7 +35,6 @@
 "homepage": "https://your_username.github.io/your_repo_name/"
 ```
 
-
 Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
 выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
 это небыло сделано автоматически.
@@ -90,3 +89,15 @@
 3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
    отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
    скрипта будет указано в чем проблема.
+
+```js
+import { format, formatDistanceStrict } from 'date-fns';
+
+const formatEventStart = start => {
+  return format(Date.parse(start), 'dd MMMM yyyy, HH:mm');
+};
+
+const formatEventDuration = (start, end) => {
+  return formatDistanceStrict(Date.parse(start), Date.parse(end));
+};
+```
