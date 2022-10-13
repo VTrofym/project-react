@@ -35,6 +35,7 @@
 "homepage": "https://your_username.github.io/your_repo_name/"
 ```
 
+
 Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
 выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
 это небыло сделано автоматически.
